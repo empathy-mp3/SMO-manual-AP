@@ -41,9 +41,10 @@ def LakePeace(world: World, multiworld: MultiWorld, state: CollectionState, play
     """can the player do lake peace"""
     if is_option_enabled(multiworld, player, "action_rando") and is_option_enabled(multiworld, player, "capturesanity"):
         return "(((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump| and |Cap Jump| and (|Dive| or |Goomba|)) or (|Zipper| and |Swim|)) and (|Swim| or |Cheep Cheep|)"
-    if is_option_enabled(multiworld, player, "action_rando") and not is_option_enabled(multiworld, player, "capturesanity"):
+    elif is_option_enabled(multiworld, player, "action_rando") and not is_option_enabled(multiworld, player, "capturesanity"):
         return "((|Triple Jump| or (|Ground Pound| and |Ground Pound Jump|) or |Backward Somersault| or |Side Somersault|) and |Wall Jump|) or |Swim|"
-    return True
+    else:
+        return True
 
 def SwimOrCheepCheep(world: World, multiworld: MultiWorld, state: CollectionState, player: int):
     """swim or cheep cheep"""

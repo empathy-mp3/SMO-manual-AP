@@ -245,7 +245,7 @@
         "category": [
             "Cascade Kingdom"
         ],
-        "region": "Cap Kingdom",
+        "region": "Post-Sand",
         "requires": []
     },
     {
@@ -310,7 +310,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": []
+        "requires": "{YamlEnabled(action_rando)} and {YamlEnabled(capturesanity) and (|Bullet Bill| or (|Cap Jump| and |Dive|)"
     },
     {
         "name": "Sand: Hidden Room in the Flowing Sands",
@@ -342,7 +342,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": []
+        "requires": "{YamlEnabled(action_rando)} and {YamlEnabled(capturesanity) and |Bullet Bill| or ((|Backward Somersault| or |Side Somersault|) and (|Cap Jump| and |Dive|))"
     },
     {
         "name": "Sand: From a Crate in the Ruins",
@@ -415,7 +415,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": []
+        "requires": "{YamlEnabled(capturesanity) and |Bullet Bill|"
     },
     {
         "name": "Sand: Bird Traveling the Desert",
@@ -765,7 +765,7 @@
             "Sand Kingdom"
         ],
         "region": "Sand Kingdom",
-        "requires": "{IntoTheLake()} and {MazeSkip()} and (|Power Moon:21| or (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| )))"
+        "requires": "|Power Moon:21| or (|Sand Kingdom Power Moon:16| OR ( |Sand Kingdom Multi-Moon| AND |Sand Kingdom Power Moon:13| ) OR ( |Sand Kingdom Multi-Moon:2| AND |Sand Kingdom Power Moon:10| ))"
     },
     {
         "name": "Lake: Broodals Over the Lake",
